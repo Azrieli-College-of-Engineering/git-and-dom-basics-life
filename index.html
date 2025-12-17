@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Basics Assignment</title>
+  <!-- External stylesheet linked here.  External stylesheets let you reuse styles across pages. -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>DOM Manipulation Practice</h1>
+  <p>This page provides a minimal interface for practising basic DOM operations with JavaScript.  You will implement the functionality in <code>script.js</code>.</p>
+
+  <!-- Input for list items -->
+  <div id="input-section">
+    <label for="item-input">New Item:</label>
+    <input id="item-input" type="text" placeholder="Enter an item name">
+  </div>
+
+  <!-- Buttons for DOM operations -->
+  <div id="button-section" style="margin-top:1em;">
+    <button id="btn-add-item">Add Item</button>
+    <button id="btn-clear-items">Clear Items</button>
+    <button id="btn-toggle-highlight">Toggle Highlight</button>
+  </div>
+
+  <!-- Unordered list to display items -->
+  <ul id="item-list" style="margin-top:1em;">
+    <!-- List items will be dynamically inserted here -->
+  </ul>
+
+  <!-- Status message will be inserted here by updateStatus() -->
+  <p id="status" style="margin-top:1em; font-weight:bold;"></p>
+
+  <!-- Placeholder logo image -->
+  <img src="logo.png" alt="Random logo" id="logo" style="max-width:150px; height:auto; margin-top:2em;">
+
+  <!-- Link the external JavaScript file.  JS code executes in the browser and can be included inline or via external file. -->
+  <script src="script.js"></script>
+</body>
+</html>
