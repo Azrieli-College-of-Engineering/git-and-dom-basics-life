@@ -21,6 +21,10 @@
  */
 function addItem(text) {
   // TODO: create a new <li> element and append it to the list
+   li.textContent = text;
+  temp=document.getElementById("item-lis");
+  temp.appendchild(li);
+  
 }
 
 /**
