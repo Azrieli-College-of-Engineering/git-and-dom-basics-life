@@ -22,7 +22,7 @@
 function addItem(text) {
   // TODO: create a new <li> element and append it to the list
    li.textContent = text;
-  temp=document.getElementById("item-lis");
+  temp=document.getElementById("item-list");
   temp.appendchild(li);
   
 }
@@ -36,11 +36,18 @@ function addItem(text) {
  * description of the action.
  */
 function clearItems() {
-  // TODO: remove all list items from the UL
-   const itemToRemove = document.getElementById("item-lis");
-    if (itemToRemove) {
-        itemToRemove.remove(); // Removes the element from the DOM
+  // Get the UL element
+  const itemList = document.getElementById("item-list");
+  
+  if (itemList) {
+    // Remove all child elements using a loop
+    while (itemList.firstChild) {
+      itemList.removeChild(itemList.firstChild);
     }
+    
+    // Call updateStatus to describe the action
+    updateStatus("All items have been cleared from the list.");
+  }
 }
 
 /**
@@ -54,8 +61,15 @@ function clearItems() {
  * element.classList.toggle() to add or remove the "highlight" class.
  * Call updateStatus() to describe the action.
  */
+function loadpage(){
+  let list= document.getElementByIdf("item-list");
+  list.addEventListner("mouseenter",toggleHighlight);
+}
+
 function toggleHighlight() {
   // TODO: toggle the highlight class on all list items
+  
+  
 }
 
 /**
