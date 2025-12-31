@@ -37,6 +37,10 @@ function addItem(text) {
  */
 function clearItems() {
   // TODO: remove all list items from the UL
+   const itemToRemove = document.getElementById("item-lis");
+    if (itemToRemove) {
+        itemToRemove.remove(); // Removes the element from the DOM
+    }
 }
 
 /**
