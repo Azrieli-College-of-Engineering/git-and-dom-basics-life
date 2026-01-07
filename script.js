@@ -39,7 +39,6 @@ function clearItems() {
  */
 function loadpage() {
   let list = document.getElementById("item-list");
-  list.addEventListener("mouseenter", toggleHighlight);
 }
 
 function toggleHighlight() {
